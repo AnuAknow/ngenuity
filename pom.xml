@@ -8,12 +8,16 @@
     <!-- Project Information -->
     <groupId>com.ngenuity</groupId>
     <artifactId>automation</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>2.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <!-- Java Properties -->
     <properties>
         <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <poiVersion>5.4.0</poiVersion>
+        <log4jVersion>2.24.3</log4jVersion>
+        <seleniumVersion>4.30.0</seleniumVersion>
     </properties>
 
     <!-- Build Configuration -->
@@ -35,7 +39,7 @@
                 <configuration>
                     <archive>
                         <manifestEntries>
-                            <Class-Path>E:\\Dev\\java_projects\\ngenuity_framework\\ngenuity\\target\\classes</Class-Path>
+                            <Class-Path>${project.basedir}\\ngenuity\\target\\classes</Class-Path>
                         </manifestEntries>
                     </archive>
                 </configuration>
@@ -46,11 +50,11 @@
                 <version>1.0.0.Alpha3</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>E:\\Dev\\java_projects\\ngenuity_framework\\ngenuity\\src\\test\\resources\\testng.xml</suiteXmlFile>
+                        <suiteXmlFile>${project.basedir}\\ngenuity\\src\\test\\resources\\testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <archive>
                         <manifestEntries>
-                            <Class-Path>E:\\Dev\\java_projects\\ngenuity_framework\\ngenuity\\target\\classes</Class-Path>
+                            <Class-Path>${project.basedir}\\ngenuity\\target\\classes</Class-Path>
                         </manifestEntries>
                     </archive>
                     <argLine>-Xmx2048m -XX:MaxPermSize=512m</argLine>
@@ -76,7 +80,7 @@
             </resource>
         </resources>
     </build>
-
+ 
     <!-- Dependencies -->
     <dependencies>
         <dependency>
@@ -94,12 +98,12 @@
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>2.24.3</version> 
+            <version>${log4jVersion}</version> 
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
-            <version>2.24.3</version>
+            <version>${log4jVersion}</version>
             <exclusions>
                 <exclusion> 
                     <groupId>org.slf4j</groupId>
@@ -120,30 +124,29 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-api</artifactId>
-            <version>4.30.0</version>
+            <version>${seleniumVersion}</version>
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.30.0</version>
+            <version>${seleniumVersion}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
-            <version>4.30.0</version>
+            <version>${seleniumVersion}</version>
         </dependency>
+        
         <!-- Apache POI Dependencies -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
-            <version>5.4.0</version>
+            <version>${poiVersion}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>5.4.0</version>
+            <version>${poiVersion}</version>
         </dependency>
     </dependencies>
-
 </project>
