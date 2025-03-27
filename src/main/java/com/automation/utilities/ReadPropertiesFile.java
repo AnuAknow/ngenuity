@@ -12,7 +12,7 @@ public class ReadPropertiesFile {
   String filePath;
 
     public ReadPropertiesFile() {
-        this.filePath = "E:\\Dev\\java_projects\\ngenuity_framework\\ngenuity\\src\\main\\resources\\propFiles\\config.properties";
+        this.filePath = "..\\ngenuity\\src\\main\\resources\\propFiles\\config.properties";
     }
   
   
