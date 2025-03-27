@@ -23,7 +23,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
-                <version>3.3.1</version>
+                <version>3.0.0</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
                 </configuration>
@@ -43,11 +43,17 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M2</version>
+                <version>3.1.0</version>
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>../ngenuity/src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <archive>
+                        <manifestEntries>
+                            <Class-Path>../ngenuity/target/classes</Class-Path>
+                        </manifestEntries>
+                    </archive>
+                    <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
                     <argLine>-Xmx2048m -XX:MaxPermSize=512m</argLine>
                     <forkCount>1</forkCount>
                 </configuration>
