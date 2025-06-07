@@ -1,8 +1,7 @@
-E:\Dev\java_projects\ngenuity_framework\ngenuity\src\main\java\com\automation\Main.java
-E:\Dev\java_projects\ngenuity_framework\ngenuity\src\main\java\com\automation\pageObjects\HomePage.java
-E:\Dev\java_projects\ngenuity_framework\ngenuity\src\main\java\com\automation\pageObjects\LoginPage.java
-E:\Dev\java_projects\ngenuity_framework\ngenuity\src\main\java\com\automation\tests\LoginTest.java
-E:\Dev\java_projects\ngenuity_framework\ngenuity\src\main\java\com\automation\utilities\BaseTest.java
-E:\Dev\java_projects\ngenuity_framework\ngenuity\src\main\java\com\automation\utilities\ExcelReader.java
-E:\Dev\java_projects\ngenuity_framework\ngenuity\src\main\java\com\automation\utilities\ReadPropertiesFile.java
-E:\Dev\java_projects\ngenuity_framework\ngenuity\src\main\java\com\automation\utilities\SelectBrowser.java
+E:\Dev\java_projects\ngenuity_framework\v2\ngenuity\src\main\java\com\automation\Main.java
+E:\Dev\java_projects\ngenuity_framework\v2\ngenuity\src\main\java\com\automation\pageObjects\HomePage.java
+E:\Dev\java_projects\ngenuity_framework\v2\ngenuity\src\main\java\com\automation\pageObjects\LoginPage.java
+E:\Dev\java_projects\ngenuity_framework\v2\ngenuity\src\main\java\com\automation\utilities\BaseTest.java
+E:\Dev\java_projects\ngenuity_framework\v2\ngenuity\src\main\java\com\automation\utilities\ExcelReader.java
+E:\Dev\java_projects\ngenuity_framework\v2\ngenuity\src\main\java\com\automation\utilities\ReadPropertiesFile.java
+E:\Dev\java_projects\ngenuity_framework\v2\ngenuity\src\main\java\com\automation\utilities\SelectBrowser.java
